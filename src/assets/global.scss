@@ -1,0 +1,37 @@
+.text-center{
+  text-align: center;
+}
+// ----------- width ------------------
+
+.w-full{
+  width: 100%;
+}
+.w-60{
+  width: 60%;
+  margin: 0 auto;
+}
+
+// -------------- height ------------------
+.h-full{
+  height: 100%;
+}
+
+// ------------- display ----------------
+
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-space-between{
+  justify-content: space-between;
+}
+.align-item-center{
+  align-items: center;
+}
+
+// --------------- margin ----------------
+
+
