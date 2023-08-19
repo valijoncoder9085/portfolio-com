@@ -21,7 +21,7 @@
           <button class="card---form__btn rounded-10">
             Create Account
           </button>
-          <p style="margin: 5px 0"> Already have an account? <a href="#" style="color: olivedrab">Log in</a></p>
+          <p style="margin: 5px 0!important;"> Already have an account? <a href="#" style="color: olivedrab">Log in</a></p>
           <p class="login--form__card--or">or</p>
           <div class="button__card d-flex justify-content-center align-item-center">
               <button class="d-flex align-item-center rounded-10">
@@ -101,6 +101,8 @@ export default {
         }
       }
       &__card{
+        width: 70%;
+        margin: 0 auto;
         .card---form__btn{
           background: #007074;
           padding: 10px;
@@ -122,8 +124,20 @@ export default {
         .card---form__btn:hover{
           cursor: pointer;
         }
-        button{
-          margin: 0 10px;
+        .button__card{
+          width: 70%;
+          margin: 0 auto;
+          button{
+            margin: 0 10px;
+            padding: 5px 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            min-width: 200px;
+            img{
+              margin: 0 10px;
+            }
+          }
         }
       }
     }
@@ -147,7 +161,6 @@ export default {
         color: white;
 
         &__card{
-
           .card---form__btn{
             font-size: 14px;
           }
@@ -155,7 +168,6 @@ export default {
           .card---form__btn:hover{
             cursor: pointer;
           }
-
           button{
             img{
               width: 22px;
@@ -192,9 +204,8 @@ export default {
     }
     button{
       justify-content: center;
-      width: 100%;
+      width: 100% !important;
       text-align: center !important;
-      padding: 5px;
       img{
         width: 30px;
         margin-right: 8px;
