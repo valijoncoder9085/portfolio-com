@@ -168,10 +168,13 @@ export default {
           .card---form__btn:hover{
             cursor: pointer;
           }
-          button{
-            img{
-              width: 22px;
-              margin-right: 5px;
+          .button__card{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            button{
+              width: 100%;
+              margin: 5px 0 !important;
             }
           }
         }
@@ -179,18 +182,23 @@ export default {
     }
   }
 }
+
 @media (max-width: 900px) {
   .button__card{
     display: flex;
     flex-direction: column;
     button{
-      margin: 5px 0 !important;
+      padding: 5px 10px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      min-width: 200px;
     }
   }
 }
 @media (max-width: 1200px) {
   .login--form__card{
-
+    width: 70%!important;
     .card---form__btn{
       font-size: 22px !important;
       width: 100% !important;
@@ -213,6 +221,5 @@ export default {
     }
   }
 }
-
 
 </style>
