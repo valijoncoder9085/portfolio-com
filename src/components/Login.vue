@@ -21,7 +21,7 @@
           <button class="card---form__btn rounded-10">
             Create Account
           </button>
-          <p> Already have an account? <a href="#" style="color: olivedrab">Log in</a></p>
+          <p style="margin: 5px 0"> Already have an account? <a href="#" style="color: olivedrab">Log in</a></p>
           <p class="login--form__card--or">or</p>
           <div class="button__card d-flex justify-content-center align-item-center">
               <button class="d-flex align-item-center rounded-10">
@@ -185,18 +185,19 @@ export default {
     }
   }
   .login--form__card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 70%;
-    margin: 0 auto;
+    margin: auto;
     .button__card{
       display: flex;
     }
     button{
+      justify-content: center;
       width: 100%;
+      text-align: center !important;
+      padding: 5px;
       img{
         width: 30px;
+        margin-right: 8px;
       }
     }
   }
